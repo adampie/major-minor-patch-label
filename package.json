@@ -1,0 +1,38 @@
+{
+  "name": "major-minor-patch-label",
+  "version": "1.0.0",
+  "description": "GitHub Action enforcing semantic versioning labels on pull requests",
+  "main": "index.js",
+  "dependencies": {
+    "@actions/core": "^1.2.3",
+    "@actions/github": "^2.1.1"
+  },
+  "devDependencies": {
+    "@zeit/ncc": "^0.22.1",
+    "eslint": "^6.8.0",
+    "jest": "^25.3.0"
+  },
+  "scripts": {
+    "lint": "eslint index.js",
+    "package": "ncc build index.js -o dist",
+    "test": "eslint index.js && jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adampie/major-minor-patch-label.git"
+  },
+  "keywords": [
+    "action",
+    "semver",
+    "major",
+    "minor",
+    "patch",
+    "label"
+  ],
+  "author": "Adam Pietrzycki",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/adampie/major-minor-patch-label/issues"
+  },
+  "homepage": "https://github.com/adampie/major-minor-patch-label#readme"
+}

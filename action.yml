@@ -1,0 +1,6 @@
+name: 'major-minor-patch-label'
+description: 'GitHub Action enforcing semantic versioning labels on pull requests'
+
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
