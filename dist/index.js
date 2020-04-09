@@ -509,6 +509,11 @@ const core = __webpack_require__(470);
 async function run() {
     try {
         const token = core.getInput('TOKEN');
+
+        if (token === "") {
+            core.setFailed("Missing TOKEN secret!");
+        }
+
         const client = new github.GitHub(token);
         const context = github.context;
 

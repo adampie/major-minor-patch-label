@@ -4,6 +4,11 @@ const core = require('@actions/core');
 async function run() {
     try {
         const token = core.getInput('TOKEN');
+
+        if (token === "") {
+            core.setFailed("Missing TOKEN secret!");
+        }
+
         const client = new github.GitHub(token);
         const context = github.context;
 
