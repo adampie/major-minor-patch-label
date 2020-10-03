@@ -4,16 +4,14 @@
   "description": "GitHub Action enforcing semantic versioning labels on pull requests",
   "main": "index.js",
   "dependencies": {
-    "@actions/core": "^1.2.4",
+    "@actions/core": "^1.2.6",
     "@actions/github": "^4.0.0"
   },
   "devDependencies": {
     "@zeit/ncc": "^0.22.3"
   },
   "scripts": {
-    "lint": "eslint index.js",
-    "package": "ncc build index.js -o dist",
-    "test": "eslint index.js && jest"
+    "build": "ncc build index.js -o dist"
   },
   "repository": {
     "type": "git",
