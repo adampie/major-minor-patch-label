@@ -8,9 +8,7 @@
     "@actions/github": "^4.0.0"
   },
   "devDependencies": {
-    "@zeit/ncc": "^0.22.3",
-    "eslint": "^7.5.0",
-    "jest": "^26.1.0"
+    "@zeit/ncc": "^0.22.3"
   },
   "scripts": {
     "lint": "eslint index.js",
